@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "project1"
+version = "0.1.0"
+description = "Telegram бот для книги рецептов"
+authors = ["Nukhimson A <nukhimson@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = "^3.18.0"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.13.3"
+lxml = "^5.3.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+black = "^25.1.0"
+isort = "^6.0.1"
+ruff = "^0.9.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+
+line-length = 88
+
+select = ["E", "F", "W"]
+
+ignore = []
+
+exclude = [".git", "__pycache__", "venv", ".venv"]
