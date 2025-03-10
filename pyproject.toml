@@ -5,6 +5,7 @@ description = "Telegram бот для книги рецептов"
 authors = ["Nukhimson A <nukhimson@yandex.ru>"]
 license = "MIT"
 readme = "README.md"
+packages = [{include = "Recipe.py"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
